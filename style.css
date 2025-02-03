@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Inder&display=swap');
+:root{
+    --color-primary: #071108;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden; /* Ẩn thanh cuộn ngang */
+    font-family: "Inder", serif;
+}
+.container{
+    width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.inner-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Button */
+.button-1{
+    width: 152px;
+    height: 67px;
+    background-color: #36827F;
+    font-size: 22px;
+    color: white;
+    outline: none;
+    border: 0;
+}
+.button-2{
+    border-radius: 40px;
+    width: 67px;
+    height: 67px;
+    background-color: transparent;
+}
+/* Header */
+.header .inner-menu ul{
+    display: flex;
+    gap: 40px;
+}
+.header .inner-menu ul li{
+    /* margin-right: 40px; */
+    list-style: none;
+}
+.header .inner-menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 700;
+}
+.header .inner-menu ul li .underline{
+    display: inline-block;
+    position: relative; 
+    font-weight: bold; 
+}
+.header .underline::after {
+    content: ""; 
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 40%; 
+    height: 3px; 
+    background-color: teal; 
+}
+.header .inner-menu ul li .add-icon{
+    color: var(--color-primary);
+}
+.header .inner-menu ul li .add-icon::after{
+    content: "\f078";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    font-size: 15px;
+    margin-left: 8px;
+}
+
+.header .inner-search button{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.header .inner-search button:last-child{
+    margin-right: 0px;
+}
+/* End Header */
+
+/* Section 1 */
+
+.section1 .inner-wrap .inner-content{
+    width: 50%;
+    height: auto;
+    padding: 10px 20px;
+}
+.section1 .text-intro{
+    font-size: 45px;    
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-weight: 400;
+    letter-spacing: 0.15em;
+}
+.section1 .inner-content .text-logo{
+    font-family: 'Bungee Inline', cursive;
+    font-size: 80px;
+    display: inline-block;
+    position: relative; 
+    font-weight: bold; 
+    margin: 10px 0;
+}
+.section1 .inner-content .text-logo::after{
+    content: ""; 
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 40%; 
+    height: 3px; 
+    background-color: var(--color-primary); 
+}
+.section1 .text-main{
+    font-size: 24px;
+    width: 412px;
+}
+.section1 .img-content .img-content-change{
+    position: relative;
+    left: -10px;
+}
+.section1 .section-end{
+    display: flex;
+    align-items: center;
+}
+.section1 .section-end .function{
+    margin-left: 20px;
+}
+.section1 .section-end button i{
+    font-size: 20px;
+}
+
+.section1 .inner-image{
+    position: relative;
+    width: 50%;
+    top: -15px;
+    right: 200px;
+}
+
+.section1 .inner-statistic{
+    width: 1025px;
+    display: flex;
+    justify-content: space-between;
+    margin: 120px auto;
+    align-items: center;
+}
+.section1 .inner-statistic .sta{
+    width: calc((1025px - 125px) / 6);
+    height: 105px;
+    border: 1px solid #e1dede;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.section1 .inner-statistic .sta .sta-1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 10px;
+}
+.section1 .inner-statistic .sta .sta-1 .sta-num{
+    margin-right: 10px;
+}
+.section1 .sta-num{
+    font-size: 30px;
+    font-weight: 600;
+}
+.section1 p{
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+/* End Section 1 */
+
+/* Section 2 */
+/* .section2{
+    position: relative;
+} */
+.section2 .section2-content{
+    font-size: 72px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+}
+/* .section2 .section2-content::after{
+    content: ""; 
+    position: re;
+    bottom: -20px; 
+    left: 0;
+    width: 40%; 
+    height: 3px; 
+    background-color: #317573; 
+} */
+.section2 .section2-content .underline::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 40%;
+    height: 3px;
+    background-color: #317573; 
+}
+/* End Section 2 */
+
