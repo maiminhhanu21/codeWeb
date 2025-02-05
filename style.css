@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Inder&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root{
     --color-primary: #071108;
 
@@ -9,7 +9,7 @@
 }
 body {
     overflow-x: hidden; /* Ẩn thanh cuộn ngang */
-    font-family: "Inder", serif;
+    font-family: "Inter", serif;
 }
 .container{
     width: 1180px;
@@ -182,31 +182,133 @@ body {
 /* End Section 1 */
 
 /* Section 2 */
-/* .section2{
-    position: relative;
-} */
+
 .section2 .section2-content{
     font-size: 72px;
     font-weight: 600;
     text-align: center;
     position: relative;
+    text-transform: uppercase;
 }
-/* .section2 .section2-content::after{
-    content: ""; 
-    position: re;
-    bottom: -20px; 
-    left: 0;
-    width: 40%; 
-    height: 3px; 
-    background-color: #317573; 
-} */
+
 .section2 .section2-content .underline::after{
     content: "";
     position: absolute;
     bottom: -10px;
-    width: 40%;
-    height: 3px;
+    left: 470px;
+    width: 20%;
+    height: 5px;
     background-color: #317573; 
+}
+
+/* giao diện ảnh */
+.section2 .optionList{
+    display: flex;
+}
+.section2 .op1{
+    overflow: hidden;
+    margin-top: 30px;
+    margin-right: 27px;
+}
+.section2 .img{
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.section2 .slogan{
+    position: absolute;
+    top: 20px;
+    left: 115px;
+    color: teal;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.section2 .color-options {
+    position: absolute;
+    left: 5px;
+    width: 40px;
+    background: white;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.color {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.red { background: #980F1C; }
+.yellow { background: #E4B736; }
+.black { background: #191818; }
+.blue { background: #2F477E; }
+.plum-red { background: #721B2C;}
+.gray { background: #CDCACF;}
+.mint {background-color: #869991;}
+.green {background-color: #446056;}
+
+.section2 .optionList img{
+    background-color: #F1F2F4;
+    width: 280px;
+    
+}
+.section2 .optionList .inner-img{
+    position: absolute;
+    bottom: 160px;
+    left: 230px;
+    display: flex;
+    flex-direction: column;
+}
+.section2 .optionList .inner-img img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+} 
+.section2 h3{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+.section2 .price{
+    color: #36827F;
+    font-weight: 500;
+}
+.section2 .buy-section{
+    display: flex;
+    align-items: center;
+}
+.section2 .buy-btn{
+    width: 125px;
+    height: 30px;
+    background-color: #36827F;
+    color: white;
+    outline: none;
+    border: none;
+    margin-right: 70px;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-wrap: nowrap; */
+
+}
+.section2 .buy-btn .arrow::after{
+    content: "\f061";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+}
+.section2 .sold{
+    margin-right: 18px;
+    font-size: 12px;
 }
 /* End Section 2 */
 
