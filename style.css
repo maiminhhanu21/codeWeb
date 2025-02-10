@@ -7,6 +7,11 @@
 *{
     box-sizing: border-box;
 }
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 body {
     overflow-x: hidden; /* Ẩn thanh cuộn ngang */
     font-family: "Inter", serif;
@@ -189,6 +194,7 @@ body {
     text-align: center;
     position: relative;
     text-transform: uppercase;
+    margin-top: 120px;
 }
 
 .section2 .section2-content .underline::after{
@@ -298,6 +304,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    cursor: pointer;
     /* flex-wrap: nowrap; */
 
 }
@@ -312,3 +319,438 @@ body {
 }
 /* End Section 2 */
 
+/* Section 3 */
+.section3 .inner-left{
+    width: 50%;
+    margin-top: 120px;
+}
+.section3 .inner-left-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section3 .title{
+    font-size: 64px;
+    font-weight: 600;
+}
+.section3 .arrow-button{
+    display: flex;
+}
+.section3 .arrow-button-left::before{
+    content: "\f177";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 20px;
+    border: solid 1px #071108;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 24px;
+}
+.section3 .arrow-button-right::after{
+    content: "\f178";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    border: solid 1px #071108;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 24px;
+}
+.section3 .inner-infor{
+    display: flex;
+}
+.section3 .inner-infor .inner-infor-1{
+    position: relative;
+    width: 60%;
+}
+.section3 .bg{
+    background-color: #F1F2F4;
+    padding-bottom: 20px;
+}
+.section3 .img-1{
+    position: relative;
+    z-index: 9999;
+    width: 100%;
+    top: 30px;
+}
+.section3 .effect-1::after{
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 40px;
+    background: linear-gradient(180deg, rgba(113,206,203,1) 0%, rgba(55,130,127,1) 100%);
+    padding: 15px;
+    border-radius: 70%;
+    top: 200px;
+    left: 10px;
+    z-index: 0;
+}
+.section3 .inner-infor .description{
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.5;
+}
+.section3 .inner-infor-2{
+    position: relative;
+    margin-left: 15px;
+    width: 50%;
+}
+.section3 .img-2{
+    position: relative;
+    top: 115px;
+    z-index: 9999;
+}
+.section3 .inner-infor .effect-2:after{
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 225px;
+    background-color: #36827F; 
+    padding: 15px;
+    border-radius: 70%;
+    top: 125px;
+    left: 5px;
+    z-index: 0;
+}
+.section3 .bg-2{
+    background-color: #F1F2F4;
+    height: 400px;
+}
+.section3 .inner-wrap{
+    align-items: start;
+    justify-content: space-around;
+}
+.section3 .inner-right{
+    margin-top: 120px;
+}
+.section3 .inner-right .content{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+}
+.section3 .inner-right .content p{
+    margin: 0px;
+}
+.section3 .inner-right .content .font{
+    font-size: 45px;
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+.section3 .inner-right .content .f1{
+    color: #D9D9D9;
+    position: relative;
+}
+.section3 .inner-right .content .f2{
+    position: relative;
+}
+.section3 .inner-right .content .f1::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;   
+    background-color: #D9D9D9;
+    top: 60%;
+    right: 5%;
+}
+.section3 .inner-right .content .f2{
+    color: #071108;
+}
+.section3 .inner-right .content .f2::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;   
+    background-color: #000;
+    top: 60%;
+    left: 5px;
+}
+.section3 .inner-right .click{
+    display: flex;
+}
+.section3 .inner-right button{
+    width: 150px;
+    height: 60px;
+    color: white;
+    font-size: 18px;
+    background-color: #36817E;
+    border: none;
+}
+.section3 .inner-right button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.section3 .inner-right button .arrow::after{
+    content: "\f061";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+/* End Section 3 */
+/* Section 4 */
+.section4{
+    margin-top: 120px;
+    padding-bottom: 80px;
+    background-color: #F1F2F4;
+}
+.section4 p{
+    margin: 0;
+}
+.section4 h2{
+    margin: 0;
+    position: relative;
+}
+.section4 .title .text-1{
+    padding-top: 60px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #696969;
+    text-align: center;
+}
+.section4 .title .text-2{
+    font-size: 72px;
+    text-align: center;
+    font-weight: 600;
+}
+.section4 .title .underline{
+    display: flex;
+    align-items: center;
+    position: relative; 
+    font-weight: bold; 
+}
+.section4 .title .underline::after {
+    content: ""; 
+    position: absolute;
+    bottom: -5px; 
+    left: 30%;
+    width: 40%; 
+    height: 5px; 
+    background-color: #36827F; 
+}
+.section4 .image{
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 45px;
+}
+.section4 img{
+    position: relative;
+}
+
+.effect1::after{
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 2px;
+    color: #36827F;
+    top: 20px;
+    left: 15px;
+}
+
+/* End Section 4 */
+
+/* Section 5 */
+.section5{
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.section5 h2{
+    position: relative;
+    font-size: 64px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.section5 h2 .underline::after{
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 5px;
+    background-color: #36827F;
+    top: 100%;
+    left: 40%;
+}
+
+.timeline {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-top: 40px;
+}
+.section5 .timeline:nth-child(2n+1) {
+    flex-direction: row-reverse;
+}
+
+.section5 .content {
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+.section5 img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.h3{
+    font-size: 16px;
+}
+.section5 p{
+    font-size: 14px;    
+    color: #071108;
+}
+/* End Section 5 */
+
+/* Section 6 */
+.section6{
+    margin-top: 120px;
+}
+.section6 h2{
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 64px;
+}
+.section6 h2 .underline::after{
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 5px;
+    background-color: #36827F;
+    left: 40%;
+    margin-bottom: 40px;
+}
+.section6 .item{
+    /* width: calc((100% - 30px)/3); */
+    display: flex;
+    gap: 30px;
+}
+.section6 .item > div{
+    width: calc((100% - 60px) / 3);
+}
+.section6 .title{
+    font-size: 18px;
+}
+.section6 .description{
+    font-size: 18px;
+    color: #696969;
+}
+.section6 img{
+    position: relative;
+    left: -10px;
+}
+.section6 .button{
+    display: flex;
+}
+.section6 .button .text-1{
+    font-size: 12px;
+    border: 3px solid #000;
+    width: auto;
+    height: auto;
+    padding: 5px 15px 5px 15px;
+}
+.section6 .button .button-news{
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 10px;
+    background-color: #347C7A;
+    border: none;
+    color: white;
+    padding: 2px 18px 2px 18px;
+}
+
+.section6 .pagnigation{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section6 .pagnigation .arrow-left::before{
+    content: "\f060";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    padding: 15px 15px 15px 15px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin-right: 65px;
+}
+.section6 .pagnigation .arrow-right::after{
+    content: "\f061";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    padding: 15px 15px 15px 15px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin-left: 65px;
+}
+.section6 .pagnigation .center{
+    display: flex;
+    gap: 15px;
+}
+.section6 .item1{
+    width: 20px;
+    height: 15px;
+    background-color: #317573;
+    border-radius: 40%;
+}
+.section6 .item2{
+    width: 10px;
+    height: 15px;
+    background-color: #CAE0DF;
+    border-radius: 40%;
+}
+/* End Section 6 */
+
+/* Section7 */
+.section7 .bg-color{
+    margin-top: 120px;
+}
+.section7 .bg-color .img{
+    position: relative;
+}
+.section7 .outer{
+    position: absolute;
+    top: -5px;
+    left: 30%;
+    width: 550px;
+    height: 500px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    text-align: center;
+}
+.section7 .outer h2{
+    font-size: 32px;
+    text-transform: uppercase;
+}
+.section7 .outer h2 .underline{
+    position: relative;
+    top: 10px;
+    left: 30%;
+    content: "";
+    width: 40%;
+    height: 2px;
+    background-color: #317573;
+}
+.section7 p{
+    display: inline-block;
+}
+.section7 .content{
+    width: 80%;
+}
+.section7 .add{
+    padding-left: 4px;
+    color: #317573;
+    font-weight: 800;
+}
+.section7 input{
+    font-size: 20px;
+    width: 422px;
+    height: 56px;
+    margin-bottom: 20px;
+    padding: 16px 20px 16px 10px;
+}
+/* End Section7 */
