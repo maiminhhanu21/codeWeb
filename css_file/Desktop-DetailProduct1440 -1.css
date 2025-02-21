@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+    --color-primary: #071108;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body {
+    overflow-x: hidden; /* Ẩn thanh cuộn ngang */
+    font-family: "Inter", serif;
+}
+.container{
+    width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.inner-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Button */
+.button-1{
+    width: 152px;
+    height: 67px;
+    background-color: #36827F;
+    font-size: 22px;
+    color: white;
+    outline: none;
+    border: 0;
+}
+.button-2{
+    border-radius: 40px;
+    width: 67px;
+    height: 67px;
+    background-color: transparent;
+}
+/* Header */
+/* .header{
+    text-align: center;
+    align-items: center;
+} */
+.header .inner-logo img{
+    margin-top: 5px;
+}
+.header .inner-menu ul{
+    display: flex;
+    gap: 40px;
+}
+.header .inner-menu ul li{
+    list-style: none;
+}
+.header .inner-menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 700;
+}
+.header .inner-menu ul li .underline{
+    display: inline-block;
+    position: relative; 
+    font-weight: bold; 
+}
+.header .underline::after {
+    content: ""; 
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 40%; 
+    height: 3px; 
+    background-color: teal; 
+}
+.header .inner-menu ul li .add-icon{
+    color: var(--color-primary);
+}
+.header .inner-menu ul li .add-icon::after{
+    content: "\f078";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    font-size: 15px;
+    margin-left: 8px;
+}
+
+.header .inner-search button{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.header .inner-search button:last-child{
+    margin-right: 0px;
+}
